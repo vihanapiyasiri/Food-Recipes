@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swedish Pancake Recipe</title>
+    <link rel="icon" href="/assets/images/Swedish-Pancackes-1-2.jpg" />
+    <style>
+        /* Resetting default styles */
+        body, h1, h2, h3, h4, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #faf3e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            width: 100%;
+            background-color: #d89c3e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('/assets/images/Swedish-Pancackes-1-2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Styles */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            border-radius: 8px;
+            max-width: 48%;
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Text Styles */
+        p, li {
+            margin: 0.5em 0;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        /* Header Styles for Ingredients and Instructions */
+        h3 {
+            color: #d89c3e;
+            margin-top: 1.5em;
+        }
+
+        h4 {
+            color: #d89c3e;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: #d89c3e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b8863b;
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #d89c3e;
+            color: white;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#ingredients">Ingredients</a>
+        <a href="#instructions">Instructions</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Swedish Pancake </h1>
+    </div>
+
+    <div class="container">
+        <p>This recipe for Swedish Pancakes makes deliciously thin and light pancakes that can be served with various toppings such as jam, whipped cream, or syrup.</p>
+
+        <div class="image-container">
+            <img src="/assets/images/Swedish-Pancackes-1-2.jpg" alt="Swedish Pancake" />
+        </div>
+
+        <h3 id="ingredients">Ingredients</h3>
+        <ul>
+            <li>3 eggs</li>
+            <li>1 1/2 cups whole milk (+ 1/4 cup – see notes)</li>
+            <li>1 cup flour</li>
+            <li>3 tablespoons melted butter</li>
+            <li>1 tablespoon granulated sugar</li>
+            <li>1/2 teaspoon salt</li>
+            <br>
+            <h4>For Topping:</h4>
+            <li>Lingonberry or blueberry jam</li>
+            <li>Plain yogurt</li>
+            <li>Whipped cream (or just straight heavy whipping cream – trust, it’s delicious)</li>
+        </ul>
+
+        <h3 id="instructions">Instructions</h3>
+        <ol>
+            <li><strong>Make Pancake Batter:</strong> Blend the eggs and milk until doubled in size, about 30 seconds. Add flour, melted butter, sugar, and salt; blend for another 15-20 seconds until combined.</li>
+            <li><strong>Pour and Pan Tilt:</strong> Preheat a nonstick or well-seasoned cast iron pan over medium heat. Pour about 1/4 cup of pancake batter into the pan with one hand, and immediately tilt the pan with the other hand to spread the batter even wider. This will give you a signature thin lacy edge on your pancake.</li>
+            <li><strong>Cook:</strong> Let it sit for about 1 minute or until the pancake is golden brown; use a spatula to pull the edges up and flip the pancake. Cook for another 15-30 seconds on the back side. Cook to your desired level of doneness; I prefer golden brown on the front side and pale on the back side.</li>
+            <li><strong>Serve:</strong> Serve them flat, folded, or rolled, topped with whatever you like: maple syrup, whipped cream, fruit, jams, etc. I like to fold them and serve with lingonberry jam and yogurt!</li>
+        </ol>
+
+        <!-- Button to encourage user interaction -->
+        <a href="#contact" class="btn">Share this Recipe</a>
+    </div>
+
+    <footer>
+        © 2024 Swedish Pancake Recipes | Enjoy our best pancake recipes
+    </footer>
+</body>
+</html>

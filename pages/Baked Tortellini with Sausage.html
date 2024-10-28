@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baked Tortellini with Sausage</title>
+    <link rel="icon" href="/assets/images/Baked-Tortellini-1-scaled-e1708701729683 (1).jpg" />
+    <style>
+      /* Resetting default styles */
+      body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* General Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #faf3e0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.6;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        width: 100%;
+        background-color: #d89c3e;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .navbar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Hero Section */
+      .hero {
+        background-image: url('/assets/images/Baked-Tortellini-1-scaled-e1708701729683 (1).jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      /* Main Container */
+      .container {
+        max-width: 800px;
+        margin: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Image Styles */
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .image-container img {
+        border-radius: 8px;
+        max-width: 48%;
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Blockquote Styles */
+      blockquote {
+        font-style: italic;
+        color: #555;
+        padding: 10px;
+        border-left: 3px solid #d89c3e;
+        margin: 1em 0;
+        background: #f9f2e7;
+      }
+
+      /* Text Styles */
+      p, li {
+        margin: 0.5em 0;
+        font-size: 1.1rem;
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      /* Header Styles for Ingredients and Instructions */
+      h3 {
+        color: #d89c3e;
+        margin-top: 1.5em;
+      }
+
+      /* Button Styles */
+      .btn {
+        display: inline-block;
+        background-color: #d89c3e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #b8863b;
+        transform: scale(1.05);
+      }
+
+      /* Footer Styles */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #d89c3e;
+        color: white;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="#ingredients">Ingredients</a>
+      <a href="#instructions">Instructions</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Baked Tortellini with Sausage</h1>
+    </div>
+
+    <div class="container">
+      <p>This dish is perfect for a cozy family meal. The combination of savory sausage, tender vegetables, and cheesy tortellini creates a comforting and delicious dish that pairs perfectly with garlic bread.</p>
+
+      <!-- First image floating to the right -->
+      <div class="image-container">
+        <img src="/assets/images/Baked-Tortellini-1-scaled-e1708701729683 (1).jpg" style="width: 300px; height: 320px;" alt="Baked Tortellini with Sausage" />
+      </div>
+
+      <h3 id="ingredients">Ingredients</h3>
+      <ul>
+        <li>1 tablespoon avocado or olive oil</li>
+        <li>1 lb. ground Italian sausage (mild or spicy)</li>
+        <li>2–3 carrots, chopped</li>
+        <li>2–3 stalks of celery, chopped</li>
+        <li>1 yellow onion, minced</li>
+        <li>3 large cloves garlic, minced</li>
+        <li>1 teaspoon fennel seeds, crushed</li>
+        <li>1 25-ish ounce jar of tomato sauce OR a can of San Marzano tomatoes</li>
+        <li>10–15 ounces of refrigerated cheese tortellini</li>
+        <li>1 1/2 – 2 cups chicken broth</li>
+        <li>2 cups baby spinach, torn</li>
+        <li>1/2 cup shredded mozzarella cheese</li>
+        <li>1/4 cup grated Parmesan</li>
+        <li>Finely chopped parsley</li>
+        <li>Garlic bread, for serving</li>
+      </ul>
+
+      <h3 id="instructions">Instructions</h3>
+      <ol>
+        <li><strong>Brown the sausage:</strong> Heat a very large oven-safe skillet over medium-high heat. Add the oil and the sausage; break apart with a wooden spoon and brown until it’s got some nice color. Transfer to a bowl and drain out any excess oil, leaving about a tablespoon in the pan.</li>
+        <li><strong>Sauté the veggies:</strong> If there is browning on the bottom of your pan, that’s great. Add the veggies and cook until they are fragrant and soft. Add the fennel seeds and cook for another minute. Then add the sausage back in.</li>
+        <li><strong>Add everything else:</strong> Add the tomato sauce, tortellini, and 1 cup of broth. Let it come to a low simmer and cook for 5 minutes to cook the tortellini. If needed, add more broth. Cover and simmer on low heat if needed.</li>
+        <li><strong>Add spinach and cheese:</strong> Taste and season with salt if using canned tomatoes. Add the spinach and stir until wilted. Top with mozzarella cheese and bake in the oven at 375°F (190°C) for 8-10 minutes, or until the cheese is melted.</li>
+        <li><strong>Finish:</strong> Sprinkle grated Parmesan and chopped parsley on top. Serve with garlic bread.</li>
+      </ol>
+
+      <!-- Second image floating to the left -->
+      <div class="image-container">
+        <img src="/assets/images/Baked-Tortellini 3.jpg" style="width: 200px; height: 250px;" alt="Closeup of Baked Tortellini" />
+      </div>
+
+      <p>If you're looking for a satisfying and hearty dish, this Baked Tortellini with Sausage is sure to please everyone at the table.</p>
+
+      <!-- Button to encourage user interaction -->
+      <a href="#contact" class="btn">Share this Recipe</a>
+    </div>
+
+    <footer>
+      © 2024 Baked Tortellini Recipes | Cozy up to our best family meals
+    </footer>
+  </body>
+</html>

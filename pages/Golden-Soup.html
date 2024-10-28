@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Soup </title>
+    <link rel="icon" href="/assets/images/Golden-Soup-3.jpg" />
+    <style>
+      /* Resetting default styles */
+      body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* General Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #faf3e0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.6;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        width: 100%;
+        background-color: #d89c3e;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .navbar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Hero Section */
+      .hero {
+        background-image: url('/assets/images/Golden-Soup-3.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      /* Main Container */
+      .container {
+        max-width: 800px;
+        margin: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Image Styles */
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .image-container img {
+        border-radius: 8px;
+        max-width: 48%;
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Blockquote Styles */
+      blockquote {
+        font-style: italic;
+        color: #555;
+        padding: 10px;
+        border-left: 3px solid #d89c3e;
+        margin: 1em 0;
+        background: #f9f2e7;
+      }
+
+      /* Text Styles */
+      p, li {
+        margin: 0.5em 0;
+        font-size: 1.1rem;
+      }
+
+      ul {
+        list-style-type: circle;
+        padding-left: 20px;
+      }
+
+      /* Header Styles for Ingredients and Instructions */
+      h3 {
+        color: #d89c3e;
+        margin-top: 1.5em;
+      }
+
+      /* Button Styles */
+      .btn {
+        display: inline-block;
+        background-color: #d89c3e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #b8863b;
+        transform: scale(1.05);
+      }
+
+      /* Footer Styles */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #d89c3e;
+        color: white;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="#ingredients">Ingredients</a>
+      <a href="#instructions">Instructions</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Golden Soup</h1>
+    </div>
+
+    <div class="container">
+      <p>This Golden Soup is easy, creamy, and a perfect cozy classic. Made with cauliflower, cashews, and turmeric, it's a nourishing and delicious meal for chilly days.</p>
+      
+      <div class="image-container">
+        <img src="/assets/images/Golden-Soup-3.jpg" alt="Golden Soup" />
+      </div>
+
+      <blockquote>There are no words to describe how delicious this soup was! I made it exactly according to the recipe and there wasn’t a drop left after my husband got a hold of it.</blockquote>
+
+      <p>Hello and welcome to your fall life. I would like to campaign for you to enter into fall soup season with this cozy classic Golden Soup. It is a hug-in-a-bowl that is not only <strong>easy to make</strong> but honestly puts many other soups to shame. Ooooh yes, I said it!</p>
+      
+      <h3 id="ingredients">Golden Soup Ingredients</h3>
+      <ul>
+        <li>2 tablespoons olive oil</li>
+        <li>Half an onion, chopped</li>
+        <li>2 cloves garlic, chopped</li>
+        <li>1 head of cauliflower, chopped into about 5 cups of chunks or florets</li>
+        <li>1 cup cashews</li>
+        <li>1 tablespoon turmeric</li>
+        <li>7–8 cups water</li>
+        <li>2 teaspoons salt</li>
+        <li>A squeeze of lemon juice</li>
+      </ul>
+      
+      <h3 id="instructions">Instructions</h3>
+      <p>
+        <strong>Sauté:</strong> Heat the oil in a deep soup pot. Add the onion, garlic, cauliflower, cashews, and turmeric. Sauté for 10 minutes or until very fragrant.<br />
+        <strong>Simmer:</strong> Add the water (start with 4 cups) and salt. Simmer until softened.<br />
+        <strong>Blend:</strong> Transfer the soup to a blender and blend into a creamy consistency. It’s best to do this in batches.<br />
+        <strong>Finish:</strong> Return to the soup pot and add any additional water (remaining 2-3 cups) if needed to thin it out. Season with more salt and a squeeze of lemon juice.<br />
+        <strong>Serve:</strong> Top with spiced chickpeas, parsley, and a drizzle of olive oil. Enjoy with some crusty bread and fall in love with the season.
+      </p>
+
+      <div class="image-container">
+        <img src="/assets/images/Golden-Soup-1.jpg" alt="Golden Soup Ingredients" />
+        <img src="/assets/images/Golden-Soup-2.jpg" alt="Golden Soup in a Bowl" />
+      </div>
+      
+      <p>If this soup isn’t the dictionary definition of fall cozy…<br />Well, there’s not even anything to say because it is. It just really is.</p>
+
+      <!-- Button to encourage user interaction -->
+      <a href="#contact" class="btn">Share this Recipe</a>
+    </div>
+
+    <footer>
+      © 2024 Golden Soup Recipes | Cozy up to our best fall recipes
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  /* Header Styles */
+  header {
+    background-color: #ffeef0;
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    width: 200px;
+    padding-left: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px;
+    transition: 0.3s;
+  }
+
+  /* Main Section - Recipes */
+  .main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+  }
+
+  /* About Our Recipes Section */
+  .about-recipes {
+    background-color: #fff; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding */
+    margin: 20px 0; /* Margin for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+  }
+
+  .about-recipes h2 {
+    color: #333; /* Title color */
+    font-size: 24px; /* Title size */
+    margin-bottom: 10px; /* Space below title */
+  }
+
+  .about-recipes p {
+    color: #555; /* Text color */
+    font-size: 16px; /* Text size */
+    line-height: 1.5; /* Line height for readability */
+  }
+
+  .recipe-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .recipe-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .recipe-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 10px 10px 0 0;
+  }
+
+  .recipe-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .recipe-card .tags {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .recipe-card .tags span {
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .cta-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  /* Comment and Rating Section */
+  .comment-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .comment-section h3 {
+    color: #333;
+    font-size: 20px;
+  }
+
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment-form textarea {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  .star-rating {
+    margin-top: 10px;
+  }
+
+  .star-rating input {
+    display: none;
+  }
+
+  .star-rating label {
+    font-size: 20px;
+    color: #ddd;
+    cursor: pointer;
+  }
+
+  .star-rating input:checked ~ label {
+    color: gold;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer .social-icons {
+    margin-bottom: 10px;
+  }
+
+  footer .social-icons img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  footer p {
+    margin: 10px 0;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hide the navigation links */
+      flex-direction: column; /* Stack links vertically */
+      width: 100%; /* Full width for dropdown */
+    }
+
+    nav ul.active {
+      display: flex; /* Show the links when active */
+    }
+
+    .burger {
+      display: flex; /* Show the burger button */
+    }
+
+    .recipe-card {
+      width: 45%; /* Adjust card size for smaller screens */
+    }
+  }
+
+  @media (max-width: 425px) {
+    .recipe-card {
+      width: 100%; /* Stack cards vertically on extra small screens */
+    }
+  }

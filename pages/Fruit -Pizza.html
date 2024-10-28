@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Pizza Recipe</title>
+    <link rel="icon" href="/assets/images/Fruit-Pizza-Design-1.jpg" />
+    <style>
+      /* Resetting default styles */
+      body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* General Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #faf3e0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.6;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        width: 100%;
+        background-color: #d89c3e;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .navbar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Hero Section */
+      .hero {
+        background-image: url('/assets/images/Fruit-Pizza-Design-1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      /* Main Container */
+      .container {
+        max-width: 800px;
+        margin: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Image Styles */
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .image-container img {
+        border-radius: 8px;
+        max-width: 48%;
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Blockquote Styles */
+      blockquote {
+        font-style: italic;
+        color: #555;
+        padding: 10px;
+        border-left: 3px solid #d89c3e;
+        margin: 1em 0;
+        background: #f9f2e7;
+      }
+
+      /* Text Styles */
+      p, li {
+        margin: 0.5em 0;
+        font-size: 1.1rem;
+      }
+
+      ul {
+        list-style-type: circle;
+        padding-left: 20px;
+      }
+
+      /* Header Styles for Ingredients and Instructions */
+      h3 {
+        color: #d89c3e;
+        margin-top: 1.5em;
+      }
+
+      /* Button Styles */
+      .btn {
+        display: inline-block;
+        background-color: #d89c3e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #b8863b;
+        transform: scale(1.05);
+      }
+
+      /* Footer Styles */
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #d89c3e;
+        color: white;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="#ingredients">Ingredients</a>
+      <a href="#instructions">Instructions</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Fruit Pizza Recipe</h1>
+    </div>
+
+    <div class="container">
+      <p>This Fruit Pizza combines a soft, chewy sugar cookie crust with creamy cream cheese frosting and is topped with a variety of fresh, vibrant fruits. It's the perfect dessert for any occasion, especially in the warmer months when fresh fruit is in abundance.</p>
+
+      <!-- First Image -->
+      <div class="image-container">
+        <img src="/assets/images/Fruit-Pizza-Design-1.jpg" alt="Fruit Pizza Design" />
+      </div>
+
+      <h2>Ingredients</h2>
+      <h3>For the Sugar Cookie Crust:</h3>
+      <ul>
+        <li>3/4 cup sugar</li>
+        <li>1 1/4 cups flour</li>
+        <li>1/4 teaspoon baking powder</li>
+        <li>1/4 teaspoon salt</li>
+        <li>1/2 cup butter, softened</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>1 large egg</li>
+      </ul>
+
+      <h3>For the Cream Cheese Frosting:</h3>
+      <ul>
+        <li>12 ounces cream cheese, softened</li>
+        <li>1/4 cup butter, softened</li>
+        <li>1 teaspoon vanilla</li>
+        <li>1 1/4 cup powdered sugar</li>
+      </ul>
+
+      <h3>Fruit Toppings:</h3>
+      <ul>
+        <li>7–10 strawberries, sliced</li>
+        <li>5–6 kiwis, sliced</li>
+        <li>1 mango, sliced</li>
+        <li>1/2 cup blueberries</li>
+        <li>1 small bunch of grapes, halved</li>
+      </ul>
+
+      <h2>Instructions</h2>
+      <h3>Make the Crust:</h3>
+      <p>Mix the butter, sugar, egg, and vanilla until well combined. Add flour, baking powder, and salt. Mix until combined. Chill the dough for 30 minutes.</p>
+
+      <h3>Bake the Crust:</h3>
+      <p>Preheat the oven to 350 degrees. Line a baking stone with parchment. Roll the chilled dough out onto it into a 1/4 to 1/2-inch thick layer, leaving some space around the edge. Bake for 20-25 minutes. Allow it to cool.</p>
+
+      <h3>Make the Cream Cheese Frosting:</h3>
+      <p>Using an electric mixer, combine the cream cheese, butter, powdered sugar, and vanilla until smooth and creamy. Spread over the cooled cookie crust and chill again to firm up the frosting.</p>
+
+      <h3>Decorate with Fruit:</h3>
+      <p>Top with the sliced fruits as desired. You can get creative with your design, making patterns or just placing the fruit randomly.</p>
+
+      <blockquote>
+        "This is single-handedly the BEST dessert ever!! I've made this recipe multiple times, and it's always a hit! Thank you for this amazing recipe!"
+      </blockquote>
+
+      <p>Enjoy a slice of this delightful Fruit Pizza and savor the combination of the sweet crust, creamy frosting, and the refreshing burst of fresh fruits. It's a treat for both the eyes and the taste buds!</p>
+
+      <!-- Second Image -->
+      <div class="image-container">
+        <img src="/assets/images/Fruit-Pizza-Slices-To-Decorate.jpg" alt="Fruit Pizza Slices" />
+        <img src="/assets/images/Fruit-Pizza-Slice.jpg" alt="Fruit Pizza Slice" />
+      </div>
+
+      <h3>Tips for the Perfect Fruit Pizza</h3>
+      <p>
+        - Chill the cookie dough before baking for a more manageable crust.<br />
+        - Make sure the crust is fully cooled before spreading the frosting.<br />
+        - Use a variety of fruits for a colorful and flavorful topping.
+      </p>
+
+      <!-- Button to encourage user interaction -->
+      <a href="#contact" class="btn">Share this Recipe</a>
+    </div>
+
+    <footer>
+      © 2024 Fruit Pizza Recipes | Enjoy our delightful dessert recipes
+    </footer>
+  </body>
+</html>
